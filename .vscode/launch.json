@@ -5,13 +5,11 @@
       "name": "clang++ (debug)",
       "request": "launch",
       "type": "cppdbg",
-      "program": "",
+      "program": "echo ${fileBasenameNoExtension}",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
@@ -25,36 +23,39 @@
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}\\build\\debug\\${fileBasenameNoExtension}.exe",
+        "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
-        "miDebuggerArgs": "--interpreter=mi2"
+        "miDebuggerArgs": "--interpreter=mi2",
+        "externalConsole": false
       },
       "linux": {
         "name": "clang++ (debug)",
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}\\build\\debug\\${fileBasenameNoExtension}",
+        "MIMode": "gdb",
         "miDebuggerPath": "/usr/bin/gdb",
-        "miDebuggerArgs": "--interpreter=mi2"
+        "miDebuggerArgs": "--interpreter=mi2",
+        "externalConsole": false
       },
       "osx": {
         "name": "clang++ (debug)",
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}\\build\\debug\\${fileBasenameNoExtension}",
-        "MIMode": "lldb"
+        "MIMode": "lldb",
+        "externalConsole": true
       }
     },
     {
       "name": "clang++ (release)",
       "type": "cppdbg",
       "request": "launch",
-      "program": "",
+      "program": "echo ${fileBasenameNoExtension}",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
@@ -68,23 +69,28 @@
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}\\build\\release\\${fileBasenameNoExtension}.exe",
+        "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
-        "miDebuggerArgs": "--interpreter=mi2"
+        "miDebuggerArgs": "--interpreter=mi2",
+        "externalConsole": false
       },
       "linux": {
         "name": "clang++ (release)",
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}\\build\\release\\${fileBasenameNoExtension}",
+        "MIMode": "gdb",
         "miDebuggerPath": "/usr/bin/gdb",
-        "miDebuggerArgs": "--interpreter=mi2"
+        "miDebuggerArgs": "--interpreter=mi2",
+        "externalConsole": false
       },
       "osx": {
         "name": "clang++ (release)",
         "type": "cppdbg",
         "request": "launch",
         "program": "${workspaceFolder}\\build\\release\\${fileBasenameNoExtension}",
-        "MIMode": "lldb"
+        "MIMode": "lldb",
+        "externalConsole": true
       }
     }
   ]
