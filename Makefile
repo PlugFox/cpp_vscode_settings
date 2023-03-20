@@ -2,9 +2,10 @@
 
 # Build the project
 build:
-	@rm -rf build
-	@mkdir -p build
-	@cd build && cmake .. && make
+	@cmake --build ./build --config Release
+
+build-gui:
+	@cmake-gui .
 
 # Check code
 check:

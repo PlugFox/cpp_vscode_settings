@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.26)
 
 # Project name
 project(Leetcode)
@@ -51,7 +51,7 @@ set_target_properties(Leetcode PROPERTIES
 )
 
 # Link any necessary libraries if needed
-target_link_libraries(Leetcode
-  library1
-  library2
-)
+#target_link_libraries(Leetcode
+#  library1
+#  library2
+#)
