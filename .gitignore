@@ -36,11 +36,14 @@
 # Build
 build/
 
-# macOS
-.DS_Store
+# Cache
+.cache/
 
-# cmake
+# CMake
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 CTestTestfile.cmake
+
+# macOS
+.DS_Store

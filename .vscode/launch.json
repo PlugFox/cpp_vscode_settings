@@ -22,7 +22,7 @@
         "name": "clang++ (debug)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\debug\\${fileBasenameNoExtension}.exe",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
         "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
         "miDebuggerArgs": "--interpreter=mi2",
@@ -32,7 +32,7 @@
         "name": "clang++ (debug)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\debug\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
         "MIMode": "gdb",
         "miDebuggerPath": "/usr/bin/gdb",
         "miDebuggerArgs": "--interpreter=mi2",
@@ -42,7 +42,7 @@
         "name": "clang++ (debug)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\debug\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
         "MIMode": "lldb",
         "externalConsole": true
       }
@@ -68,7 +68,7 @@
         "name": "clang++ (release)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\release\\${fileBasenameNoExtension}.exe",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
         "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
         "miDebuggerArgs": "--interpreter=mi2",
@@ -78,7 +78,7 @@
         "name": "clang++ (release)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\release\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
         "MIMode": "gdb",
         "miDebuggerPath": "/usr/bin/gdb",
         "miDebuggerArgs": "--interpreter=mi2",
@@ -88,7 +88,7 @@
         "name": "clang++ (release)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\release\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
         "MIMode": "lldb",
         "externalConsole": true
       }

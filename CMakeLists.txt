@@ -5,11 +5,26 @@ project(1337)
 # Set the C++ standard to C++20
 set(CMAKE_CXX_STANDARD 20)
 
-# Set the build type to Release
-set(CMAKE_BUILD_TYPE Release)
-
 # Add the source files to the project
 file(GLOB SOURCES *.cpp)
+
+# Define directory name
+set(DIR_NAME "build")
+
+# Check if directory exists or not
+if(NOT EXISTS ${DIR_NAME})
+    # If directory does not exist, create it
+    file(MAKE_DIRECTORY ${DIR_NAME})
+endif()
+
+# Set the created directory as the binary directory
+set(CMAKE_BINARY_DIR ${DIR_NAME})
+
+# Set executable output path to the binary directory
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+
+# Set the build type to Release
+set(CMAKE_BUILD_TYPE Release)
 
 # Set the compiler flags for Windows
 if (WIN32)

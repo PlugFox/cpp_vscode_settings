@@ -29,7 +29,7 @@
           "-std=c++20",
           "${workspaceFolder}\\*.cpp",
           "-o",
-          "${fileDirname}\\build\\debug\\${fileBasenameNoExtension}.exe"
+          "${fileDirname}\\build\\${fileBasenameNoExtension}.exe"
         ]
       },
       "linux": {
@@ -90,7 +90,7 @@
           //"-shared", // Generates a shared library instead of an executable.
           "${workspaceFolder}\\*.cpp",
           "-o",
-          "${fileDirname}\\build\\release\\${fileBasenameNoExtension}.exe"
+          "${fileDirname}\\build\\${fileBasenameNoExtension}.exe"
         ]
       },
       "linux": {
@@ -110,7 +110,7 @@
           //"-shared", // Generates a shared library instead of an executable.
           "${workspaceFolder}/*.cpp",
           "-o",
-          "${fileDirname}/build/release/${fileBasenameNoExtension}"
+          "${fileDirname}/build/${fileBasenameNoExtension}"
         ]
       },
       "osx": {
@@ -130,7 +130,7 @@
           //"-shared", // Generates a shared library instead of an executable.
           "${workspaceFolder}/*.cpp",
           "-o",
-          "${fileDirname}/build/release/${fileBasenameNoExtension}"
+          "${fileDirname}/build/${fileBasenameNoExtension}"
         ]
       },
       "dependsOn": ["create build directory"],
@@ -159,7 +159,7 @@
           "-std=c++20",
           "${workspaceFolder}\\*.cpp",
           "-o",
-          "${fileDirname}\\build\\debug\\${fileBasenameNoExtension}.exe"
+          "${fileDirname}\\build\\${fileBasenameNoExtension}.exe"
         ]
       },
       "linux": {
