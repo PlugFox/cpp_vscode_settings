@@ -79,7 +79,15 @@
           "-fcolor-diagnostics",
           "-fansi-escape-codes",
           "-g",
-          "-std=c++20",
+          "-std=c++20", // Sets the C++ language standard to C++20.
+          "-O3", // Enables maximum optimization level, which can improve runtime performance but may increase build time.
+          "-Wall",
+          "-Wextra",
+          "-pedantic",
+          "-Werror", // Enables all warnings and treats them as errors
+          //"-march=native", // Generates code optimized for the native architecture, which can improve performance on the current machine.
+          //"-fPIC", // Generates position-independent code, which is necessary for shared library builds.
+          //"-shared", // Generates a shared library instead of an executable.
           "${workspaceFolder}\\*.cpp",
           "-o",
           "${fileDirname}\\build\\release\\${fileBasenameNoExtension}.exe"
@@ -91,7 +99,15 @@
           "-fcolor-diagnostics",
           "-fansi-escape-codes",
           "-g",
-          "-std=c++20",
+          "-std=c++20", // Sets the C++ language standard to C++20.
+          "-O3", // Enables maximum optimization level, which can improve runtime performance but may increase build time.
+          "-Wall",
+          "-Wextra",
+          "-pedantic",
+          "-Werror", // Enables all warnings and treats them as errors
+          //"-march=native", // Generates code optimized for the native architecture, which can improve performance on the current machine.
+          //"-fPIC", // Generates position-independent code, which is necessary for shared library builds.
+          //"-shared", // Generates a shared library instead of an executable.
           "${workspaceFolder}/*.cpp",
           "-o",
           "${fileDirname}/build/release/${fileBasenameNoExtension}"
@@ -103,7 +119,15 @@
           "-fcolor-diagnostics",
           "-fansi-escape-codes",
           "-g",
-          "-std=c++20",
+          "-std=c++20", // Sets the C++ language standard to C++20.
+          "-O3", // Enables maximum optimization level, which can improve runtime performance but may increase build time.
+          "-Wall",
+          "-Wextra",
+          "-pedantic",
+          "-Werror", // Enables all warnings and treats them as errors
+          //"-march=native", // Generates code optimized for the native architecture, which can improve performance on the current machine.
+          //"-fPIC", // Generates position-independent code, which is necessary for shared library builds.
+          //"-shared", // Generates a shared library instead of an executable.
           "${workspaceFolder}/*.cpp",
           "-o",
           "${fileDirname}/build/release/${fileBasenameNoExtension}"
