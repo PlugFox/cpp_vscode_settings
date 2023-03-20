@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 
 # Project name
-project(1337)
+project(Leetcode)
 
 # Set the C++ standard to C++20
 set(CMAKE_CXX_STANDARD 20)
@@ -33,25 +33,25 @@ set(CMAKE_BUILD_TYPE Release)
 
 # Add source files to the project
 add_executable(
-    1337
+    Leetcode
     ${SOURCES}
 )
 
 # Set the compiler flags for Windows
 if (WIN32)
-    target_compile_options(1337 PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
+    target_compile_options(Leetcode PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
 else()
 # Set the compiler flags for macOS
-    target_compile_options(1337 PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
+    target_compile_options(Leetcode PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
 endif()
 
 # Set the executable output directory
-set_target_properties(1337 PROPERTIES
+set_target_properties(Leetcode PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/build"
 )
 
 # Link any necessary libraries if needed
-target_link_libraries(1337
+target_link_libraries(Leetcode
   library1
   library2
 )
