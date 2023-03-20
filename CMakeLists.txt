@@ -32,18 +32,19 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_BUILD_TYPE Release)
 
 # Add source files to the project
-add_executable(
-    Leetcode
-    ${SOURCES}
-)
+#add_executable(Leetcode main.cpp)
+add_executable(Leetcode ${SOURCES})
 
-# Set the compiler flags for Windows
-if (WIN32)
-    target_compile_options(Leetcode PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
-else()
-# Set the compiler flags for macOS
-    target_compile_options(Leetcode PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
-endif()
+# Set the compiler flags
+target_compile_options(Leetcode PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
+
+## Set the compiler flags for Windows
+#if (WIN32)
+#    target_compile_options(Leetcode PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
+#else()
+## Set the compiler flags for macOS and Linux
+#    target_compile_options(Leetcode PRIVATE -Wall -Wextra -pedantic -Werror -g -std=c++20 -O3)
+#endif()
 
 # Set the executable output directory
 set_target_properties(Leetcode PROPERTIES
