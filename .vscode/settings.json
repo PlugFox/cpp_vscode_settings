@@ -30,9 +30,5 @@
     "**/obj": true,
     "build": true
   },
-  //"C_Cpp.default.cppStandard": "c++20",
-  //"C_Cpp.default.compilerArgs": ["-Wno-c++11-extensions"],
-  //"C_Cpp.intelliSenseEngine": "disabled"
   "cmake.configureOnOpen": false
-  //"clangd.arguments": ["-Wno-c++11-extensions"]
 }
