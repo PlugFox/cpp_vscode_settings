@@ -1,7 +1,7 @@
 #include <iostream>
-using namespace std;
+#include "src/add.cpp"
 
-int add(int a, int b) { return a + b; }
+using namespace std;
 
 int main(int argc, char **argv) {
   std::cout << "Arguments:" << std::endl;
@@ -10,10 +10,14 @@ int main(int argc, char **argv) {
     cout << "argv[" << i << "] = " << argv[i] << endl;
   std::cout << "Hello World!" << std::endl;
 
-  int a = 1, b = 2;
-  cout << "a + b = " << add(a, b) << endl;
-  int c = 1;
-  cout << c << endl;
+  Add *add = new Add();
+  int a, b;
+  std::cout << "a = ";
+  std::cin >> a;
+  std::cout << "b = ";
+  std::cin >> b;
+  std::cout << "a + b = " << add->call(a, b) << endl;
+  delete add;
 
   // system("pause");
   return 0;

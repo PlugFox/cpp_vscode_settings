@@ -11,9 +11,8 @@ on:
       - "hotfix/**"
       - "support/**"
     paths:
-      - "src/**.cpp"
+      - "lib/**.cpp"
       - "test/**.cpp"
-      - "*.cpp"
   pull_request:
     branches:
       - "master"
@@ -23,9 +22,8 @@ on:
       - "hotfix/**"
       - "support/**"
     paths:
-      - "src/**.cpp"
+      - "lib/**.cpp"
       - "test/**.cpp"
-      - "*.cpp"
 
 jobs:
   lint:
@@ -39,8 +37,8 @@ jobs:
           - ubuntu-22.04
           - macos-12
         compiler:
-          - llvm
           - gcc
+          #- llvm
           # you can specify the version after `-` like `llvm-13.0.0`.
         include:
           - os: "windows-2022"

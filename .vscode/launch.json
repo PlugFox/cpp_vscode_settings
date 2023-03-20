@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "clang++ (debug)",
+      "name": "clang++ (development)",
       "request": "launch",
       "type": "cppdbg",
       "program": "echo ${fileBasenameNoExtension}",
@@ -17,38 +17,38 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "clang++ build (debug)",
+      "preLaunchTask": "clang++ build (development)",
       "windows": {
-        "name": "clang++ (debug)",
+        "name": "clang++ (development)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+        "program": "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
         "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
         "miDebuggerArgs": "--interpreter=mi2",
         "externalConsole": false
       },
       "linux": {
-        "name": "clang++ (debug)",
+        "name": "clang++ (development)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
         "MIMode": "gdb",
         "miDebuggerPath": "/usr/bin/gdb",
         "miDebuggerArgs": "--interpreter=mi2",
         "externalConsole": false
       },
       "osx": {
-        "name": "clang++ (debug)",
+        "name": "clang++ (development)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
         "MIMode": "lldb",
         "externalConsole": true
       }
     },
     {
-      "name": "clang++ (release)",
+      "name": "clang++ (production)",
       "type": "cppdbg",
       "request": "launch",
       "program": "echo ${fileBasenameNoExtension}",
@@ -63,32 +63,32 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "clang++ build (release)",
+      "preLaunchTask": "clang++ build (production)",
       "windows": {
-        "name": "clang++ (release)",
+        "name": "clang++ (production)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+        "program": "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
         "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
         "miDebuggerArgs": "--interpreter=mi2",
         "externalConsole": false
       },
       "linux": {
-        "name": "clang++ (release)",
+        "name": "clang++ (production)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
         "MIMode": "gdb",
         "miDebuggerPath": "/usr/bin/gdb",
         "miDebuggerArgs": "--interpreter=mi2",
         "externalConsole": false
       },
       "osx": {
-        "name": "clang++ (release)",
+        "name": "clang++ (production)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
         "MIMode": "lldb",
         "externalConsole": true
       }

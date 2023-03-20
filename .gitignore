@@ -35,6 +35,7 @@
 
 # Build
 build/
+bin/
 
 # Cache
 .cache/
