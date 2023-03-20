@@ -26,9 +26,7 @@
     "**/.git": true,
     "**/.DS_Store": true,
     "**/.dep": true,
-    "**/bin": true,
-    "**/obj": true,
-    "build": true
+    "**/obj": true
   },
   "cmake.configureOnOpen": false
 }

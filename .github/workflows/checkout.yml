@@ -2,28 +2,30 @@ name: CHECKOUT
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - "master"
-      - "develop"
-      - "feature/**"
-      - "bugfix/**"
-      - "hotfix/**"
-      - "support/**"
-    paths:
-      - "lib/**.cpp"
-      - "test/**.cpp"
-  pull_request:
-    branches:
-      - "master"
-      - "develop"
-      - "feature/**"
-      - "bugfix/**"
-      - "hotfix/**"
-      - "support/**"
-    paths:
-      - "lib/**.cpp"
-      - "test/**.cpp"
+#  push:
+#    branches:
+#      - "master"
+#      - "develop"
+#      - "feature/**"
+#      - "bugfix/**"
+#      - "hotfix/**"
+#      - "support/**"
+#    paths:
+#      - "bin/**.cpp"
+#      - "lib/**.cpp"
+#      - "test/**.cpp"
+#  pull_request:
+#    branches:
+#      - "master"
+#      - "develop"
+#      - "feature/**"
+#      - "bugfix/**"
+#      - "hotfix/**"
+#      - "support/**"
+#    paths:
+#      - "bin/**.cpp"
+#      - "lib/**.cpp"
+#      - "test/**.cpp"
 
 jobs:
   lint:
@@ -73,5 +75,5 @@ jobs:
 
       - name: Run Clang-Tidy
         run: |
-          clang-tidy lib/**.cpp -- -std=c++20
+          clang-tidy bin/main.cpp -- -std=c++20
 

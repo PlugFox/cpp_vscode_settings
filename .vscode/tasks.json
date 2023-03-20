@@ -5,13 +5,13 @@
       "label": "create build directory",
       "type": "shell",
       "windows": {
-        "command": "New-Item -ItemType Directory -Path ${workspaceFolder}\\bin, ${workspaceFolder}\\bin -Force -ErrorAction SilentlyContinue -OutVariable output | Out-Null"
+        "command": "New-Item -ItemType Directory -Path ${workspaceFolder}\\build, ${workspaceFolder}\\build -Force -ErrorAction SilentlyContinue -OutVariable output | Out-Null"
       },
       "linux": {
-        "command": "mkdir -p ${workspaceFolder}/bin ${workspaceFolder}/bin > /dev/null 2>&1"
+        "command": "mkdir -p ${workspaceFolder}/build ${workspaceFolder}/build > /dev/null 2>&1"
       },
       "osx": {
-        "command": "mkdir -p ${workspaceFolder}/bin ${workspaceFolder}/bin > /dev/null 2>&1"
+        "command": "mkdir -p ${workspaceFolder}/build ${workspaceFolder}/build > /dev/null 2>&1"
       },
       "options": {
         "cwd": "${workspaceFolder}"
@@ -29,7 +29,7 @@
           "-std=c++20",
           "${file}",
           "-o",
-          "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
+          "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
         ]
       },
       "linux": {
@@ -39,9 +39,9 @@
           "-fansi-escape-codes",
           "-g",
           "-std=c++20",
-          "${file}", //"${workspaceFolder}/*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+          "${workspaceFolder}/build/${fileBasenameNoExtension}"
         ]
       },
       "osx": {
@@ -51,9 +51,9 @@
           "-fansi-escape-codes",
           "-g",
           "-std=c++20",
-          "${file}", //"${workspaceFolder}/*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+          "${workspaceFolder}/build/${fileBasenameNoExtension}"
         ]
       },
       "dependsOn": ["create build directory"],
@@ -85,12 +85,9 @@
           "-Wextra",
           "-pedantic",
           "-Werror", // Enables all warnings and treats them as errors
-          //"-march=native", // Generates code optimized for the native architecture, which can improve performance on the current machine.
-          //"-fPIC", // Generates position-independent code, which is necessary for shared library builds.
-          //"-shared", // Generates a shared library instead of an executable.
-          "${file}", //"${workspaceFolder}\\*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
+          "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
         ]
       },
       "linux": {
@@ -105,12 +102,9 @@
           "-Wextra",
           "-pedantic",
           "-Werror", // Enables all warnings and treats them as errors
-          //"-march=native", // Generates code optimized for the native architecture, which can improve performance on the current machine.
-          //"-fPIC", // Generates position-independent code, which is necessary for shared library builds.
-          //"-shared", // Generates a shared library instead of an executable.
-          "${file}", //"${workspaceFolder}/*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+          "${workspaceFolder}/build/${fileBasenameNoExtension}"
         ]
       },
       "osx": {
@@ -125,12 +119,9 @@
           "-Wextra",
           "-pedantic",
           "-Werror", // Enables all warnings and treats them as errors
-          //"-march=native", // Generates code optimized for the native architecture, which can improve performance on the current machine.
-          //"-fPIC", // Generates position-independent code, which is necessary for shared library builds.
-          //"-shared", // Generates a shared library instead of an executable.
-          "${file}", //"${workspaceFolder}/*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+          "${workspaceFolder}/build/${fileBasenameNoExtension}"
         ]
       },
       "dependsOn": ["create build directory"],
@@ -157,9 +148,9 @@
           "-fdiagnostics-color=always",
           "-g",
           "-std=c++20",
-          "${file}", //"${workspaceFolder}\\*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
+          "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
         ]
       },
       "linux": {
@@ -168,9 +159,9 @@
           "-fdiagnostics-color=always",
           "-g",
           "-std=c++20",
-          "${file}", //"${workspaceFolder}/*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+          "${workspaceFolder}/build/${fileBasenameNoExtension}"
         ]
       },
       "osx": {
@@ -179,9 +170,9 @@
           "-fdiagnostics-color=always",
           "-g",
           "-std=c++20",
-          "${file}", //"${workspaceFolder}/*.cpp",
+          "${file}",
           "-o",
-          "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+          "${workspaceFolder}/build/${fileBasenameNoExtension}"
         ]
       },
       "dependsOn": ["create build directory"],

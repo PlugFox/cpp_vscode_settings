@@ -22,7 +22,7 @@
         "name": "clang++ (development)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
         "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
         "miDebuggerArgs": "--interpreter=mi2",
@@ -32,9 +32,9 @@
         "name": "clang++ (development)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
         "MIMode": "gdb",
-        "miDebuggerPath": "/usr/bin/gdb",
+        "miDebuggerPath": "/usr/build/gdb",
         "miDebuggerArgs": "--interpreter=mi2",
         "externalConsole": false
       },
@@ -42,7 +42,7 @@
         "name": "clang++ (development)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
         "MIMode": "lldb",
         "externalConsole": true
       }
@@ -68,7 +68,7 @@
         "name": "clang++ (production)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+        "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
         "MIMode": "gdb",
         "miDebuggerPath": "gdb.exe",
         "miDebuggerArgs": "--interpreter=mi2",
@@ -78,9 +78,9 @@
         "name": "clang++ (production)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
         "MIMode": "gdb",
-        "miDebuggerPath": "/usr/bin/gdb",
+        "miDebuggerPath": "/usr/build/gdb",
         "miDebuggerArgs": "--interpreter=mi2",
         "externalConsole": false
       },
@@ -88,7 +88,7 @@
         "name": "clang++ (production)",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+        "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
         "MIMode": "lldb",
         "externalConsole": true
       }

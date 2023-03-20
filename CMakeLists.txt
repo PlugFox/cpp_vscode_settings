@@ -11,7 +11,7 @@ set(CMAKE_C_COMPILER "clang")
 set(CMAKE_CXX_COMPILER "clang++")
 
 # Add the source files to the project
-file(GLOB SOURCES *.cpp)
+file(GLOB SOURCES bin/main.cpp)
 
 # Define directory name
 set(DIR_NAME "build")

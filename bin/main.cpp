@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/add.cpp"
+#include "../lib/src/add.cpp"
 
 using namespace std;
 
