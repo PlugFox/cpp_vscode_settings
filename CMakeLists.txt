@@ -16,9 +16,9 @@ file(GLOB SOURCES *.cpp)
 # Define directory name
 set(DIR_NAME "build")
 
-# Check if directory exists or not
+# Check if the directory exists or not
 if(NOT EXISTS ${DIR_NAME})
-    # If directory does not exist, create it
+    # If the directory does not exist, create it
     file(MAKE_DIRECTORY ${DIR_NAME})
 endif()
 
