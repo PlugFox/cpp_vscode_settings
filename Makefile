@@ -1,13 +1,7 @@
-.PHONY: all clean build check
+.PHONY: help
 
-# Clean the project
-clean:
-	@rm -rf cmake_install.cmake CMakeFiles CMakeCache.txt build .cache .DS_Store
+# Script description and usage through `make` or `make help` commands
+help:
+	@echo "Let's make something good"
 
-# Build the project
-build:
-	@cmake --build ./build --config Release
-
-# Check code
-check:
-	@clang-tidy bin/main.cpp -- -std=c++20
+-include tool/makefile/*.mk
